@@ -1,0 +1,24 @@
+.about {
+    font-family: 'MontserratAlternates-Regular';
+    color: #0A170A;
+    background-color: #F5F5F5;
+
+    &__wrapper {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__descr {
+        font-size: 18px;
+        line-height: normal;
+        width: 500px;
+        margin-right: 110px;
+    }
+
+    &__image {
+        width: 288px;
+        height: 375px;
+        object-fit: cover;
+    }
+}

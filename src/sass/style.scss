@@ -1,0 +1,89 @@
+@import 'base/fonts';
+@import 'base/media';
+@import 'base/animation';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.title {
+    padding-top: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1C1919;
+    font-size: 40px;
+    font-family: 'MontserratAlternates-Bold';
+    line-height: normal;
+    &_thin {
+        font-family: 'MontserratAlternates-Thin';
+    }
+    &_footer {
+        font-family: 'MontserratAlternates-Thin';
+        color: #FFF;
+        font-size: 32px;
+        padding-top: 25px;
+    }
+}
+
+.btn {
+    z-index: 2;
+    width: 265px;
+    height: 46px;
+    border-radius: 10px;
+    background: #313E2C;
+    transition: all .5s;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'MontserratAlternates-Regular';
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background: #87B24A;
+    }
+    &_dark {
+        color: rgb(255, 255, 255);
+        width: auto;
+        background-color: #000000ab;
+        margin-top: 10px;
+        &:hover {
+            color: rgba(255, 255, 255, 0.541);
+            background: #00000049;
+        }
+    }
+}
+
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.fade {
+    animation-name: fade; 
+    animation-duration: 0.7s;
+}
+
+
+@import 'blocks/modal';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/services';
+@import 'blocks/signup';
+@import 'blocks/footer';
